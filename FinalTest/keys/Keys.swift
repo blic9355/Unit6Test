@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Keys {
+    static let nameKey = "name"
+    static let peopleKey = "persons"
+    
+    // cell
+    static let cell = "personCell"
+}

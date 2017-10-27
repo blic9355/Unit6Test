@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D3BCFAA21FA3844500E8302D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BCFAA11FA3844500E8302D /* AppDelegate.swift */; };
-		D3BCFAA41FA3844500E8302D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BCFAA31FA3844500E8302D /* ViewController.swift */; };
 		D3BCFAA71FA3844500E8302D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BCFAA51FA3844500E8302D /* Main.storyboard */; };
 		D3BCFAA91FA3844500E8302D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BCFAA81FA3844500E8302D /* Assets.xcassets */; };
 		D3BCFAAC1FA3844500E8302D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BCFAAA1FA3844500E8302D /* LaunchScreen.storyboard */; };
+		D3BCFAB81FA385B400E8302D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BCFAB71FA385B400E8302D /* Person.swift */; };
+		D3BCFABB1FA385F200E8302D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BCFABA1FA385F200E8302D /* Keys.swift */; };
+		D3BCFABD1FA3874200E8302D /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BCFABC1FA3874200E8302D /* PersonController.swift */; };
+		D3BCFAC11FA393B400E8302D /* PairOfPeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BCFAC01FA393B400E8302D /* PairOfPeopleTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D3BCFA9E1FA3844500E8302D /* FinalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BCFAA11FA3844500E8302D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3BCFAA31FA3844500E8302D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3BCFAA61FA3844500E8302D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3BCFAA81FA3844500E8302D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3BCFAAB1FA3844500E8302D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3BCFAAD1FA3844500E8302D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3BCFAB71FA385B400E8302D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D3BCFABA1FA385F200E8302D /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		D3BCFABC1FA3874200E8302D /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		D3BCFAC01FA393B400E8302D /* PairOfPeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairOfPeopleTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		D3BCFAA01FA3844500E8302D /* FinalTest */ = {
 			isa = PBXGroup;
 			children = (
+				D3BCFAB91FA385E400E8302D /* keys */,
+				D3BCFAB61FA3858800E8302D /* storyboard */,
+				D3BCFAB51FA3857A00E8302D /* view controller */,
+				D3BCFAB41FA3857200E8302D /* model controller */,
+				D3BCFAB31FA3856800E8302D /* model */,
 				D3BCFAA11FA3844500E8302D /* AppDelegate.swift */,
-				D3BCFAA31FA3844500E8302D /* ViewController.swift */,
-				D3BCFAA51FA3844500E8302D /* Main.storyboard */,
 				D3BCFAA81FA3844500E8302D /* Assets.xcassets */,
-				D3BCFAAA1FA3844500E8302D /* LaunchScreen.storyboard */,
 				D3BCFAAD1FA3844500E8302D /* Info.plist */,
 			);
 			path = FinalTest;
+			sourceTree = "<group>";
+		};
+		D3BCFAB31FA3856800E8302D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D3BCFAB71FA385B400E8302D /* Person.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D3BCFAB41FA3857200E8302D /* model controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3BCFABC1FA3874200E8302D /* PersonController.swift */,
+			);
+			path = "model controller";
+			sourceTree = "<group>";
+		};
+		D3BCFAB51FA3857A00E8302D /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3BCFAC01FA393B400E8302D /* PairOfPeopleTableViewController.swift */,
+			);
+			path = "view controller";
+			sourceTree = "<group>";
+		};
+		D3BCFAB61FA3858800E8302D /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D3BCFAAA1FA3844500E8302D /* LaunchScreen.storyboard */,
+				D3BCFAA51FA3844500E8302D /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		D3BCFAB91FA385E400E8302D /* keys */ = {
+			isa = PBXGroup;
+			children = (
+				D3BCFABA1FA385F200E8302D /* Keys.swift */,
+			);
+			path = keys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3BCFAA41FA3844500E8302D /* ViewController.swift in Sources */,
+				D3BCFABD1FA3874200E8302D /* PersonController.swift in Sources */,
+				D3BCFAB81FA385B400E8302D /* Person.swift in Sources */,
+				D3BCFABB1FA385F200E8302D /* Keys.swift in Sources */,
 				D3BCFAA21FA3844500E8302D /* AppDelegate.swift in Sources */,
+				D3BCFAC11FA393B400E8302D /* PairOfPeopleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
